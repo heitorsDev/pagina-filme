@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                @keyframes rotate360 {
+            to {
+                transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(360deg) rotateY(-24deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(-19deg) skewY(-2deg);
+                ;
+            }
+
+        }
+
+        @keyframes rotatelogo {
+            to {
+                transform: scale(300px);
+            }
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+   
+            background: rgb(0, 151, 255);
+            background: linear-gradient(0deg, rgba(0, 151, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            cursor: url('icos/favicon.ico'), default;
+            background-image: url('https://m.media-amazon.com/images/I/71xs7jugTLL._AC_UF894,1000_QL80_.jpg');
+            background-size: 100px;
+        }
+
+        button:hover {
+
+            cursor: url('icos/favicon\ \(1\).ico'), pointer;
+        }
+
+        header {
+            outline: 2px solid white;
+            border-radius: 10px;
+            font-weight: bold;
+            display: flex;
+            font-size: 170%;
+            align-content: center;
+            align-items: center;
+            color: white;
+            width: 100%;
+            height: 10%;
+            background-color: rgba(0, 151, 255, 1);
+            text-shadow: 2px 2px 2px #FFFFFF;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 151, 255, 1) 16%, rgba(0, 151, 255, 1) 86%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        @keyframes rotateLogo {
+    to {        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); 
+    }
+}
+
+.headerimg {
+    animation: rotateLogo 2s linear infinite; /* Aplicando a animação à imagem do cabeçalho */
+    width: 90px;
+    margin: 7px;
+    border-radius: 4px;
+}
+
+        .cover {
+            width: 50%;
+            transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(9deg) rotateY(-24deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(-19deg) skewY(-2deg);
+            animation: rotate360 1.2s linear infinite;
+            /* animation set */
+            animation-play-state: paused;
+            box-shadow: 0px 0px 35px 8px rgba(255, 255, 255, 1);
+        }
+
+        .cover:hover {
+            animation-play-state: running;
+        }
+
+
+
+        .sinopse-box {
+            margin-top: 30px;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 151, 255, 1) 16%, rgba(0, 151, 255, 1) 86%, rgba(255, 255, 255, 1) 100%);
+            outline: 5px white solid;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            width: 50%;
+        }
+
+        .sinopse-texto {
+            width: 50%;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header><img class="headerimg" src="https://soderbi.com.br/wp-content/uploads/2021/03/click.jpg" alt="">
+        <h1>CLICK</h1>
+        <h6> com Adam Sandler</h6>
+    </header>
+    <div class="content">
+        <div class="sinopse-box">
+            <div class="sinopse-texto">CLICK é o melhor filme de todos os tempos assim como a maior obra de arte já feita por Adam Sandler e o próprio ser humano.</div>
+            <img class="cover" src="https://macmagazine.com.br/wp-content/uploads/2013/09/19-click.jpg" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
